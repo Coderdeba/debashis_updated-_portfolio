@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debashis Barmon | IT Professional</title>
+  <meta name="description" content="Personal portfolio of Debashis Barmon — IT Support and Infrastructure professional specializing in data center operations, monitoring and technical support.">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:title" content="Debashis Barmon | IT Professional">
+  <meta property="og:description" content="IT Support & Infrastructure professional — data center operations, monitoring and technical support.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1624'/%3E%3Ctext x='32' y='42' font-size='28' font-family='monospace' font-weight='700' text-anchor='middle' fill='%232dd4bf'%3EDB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.classList.toggle("dark", t === "dark");
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <header id="nav" class="fixed inset-x-0 top-0 z-50 transition-all">
+    <nav class="mx-auto flex h-16 max-w-page items-center justify-between px-5" aria-label="Main">
+      <a href="#home" class="font-mono text-xl font-bold tracking-tight">DB<span class="text-accent">.</span></a>
+      <ul class="hidden items-center gap-8 text-sm font-medium md:flex">
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#expertise">Expertise</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="grid h-10 w-10 place-items-center rounded-xl border border-line bg-surface/70 text-lg transition hover:border-accent" aria-label="Toggle theme">
+          <span id="themeIcon">☾</span>
+        </button>
+        <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-line bg-surface/70 text-lg md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+      </div>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-line bg-bg/95 backdrop-blur md:hidden">
+      <ul class="mx-auto flex max-w-page flex-col gap-1 px-5 py-3 text-sm font-medium">
+        <li><a class="block rounded-lg px-3 py-3 hover:bg-surface" href="#about">About</a></li>
+        <li><a class="block rounded-lg px-3 py-3 hover:bg-surface" href="#experience">Experience</a></li>
+        <li><a class="block rounded-lg px-3 py-3 hover:bg-surface" href="#expertise">Expertise</a></li>
+        <li><a class="block rounded-lg px-3 py-3 hover:bg-surface" href="#education">Education</a></li>
+        <li><a class="block rounded-lg px-3 py-3 hover:bg-surface" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="relative overflow-hidden pt-28 sm:pt-32">
+      <div class="bg-grid pointer-events-none absolute inset-0"></div>
+      <div class="glow pointer-events-none absolute -top-24 left-1/2 h-[28rem] w-[28rem] -translate-x-1/2"></div>
+
+      <div class="relative mx-auto grid max-w-page items-center gap-14 px-5 pb-20 lg:grid-cols-[1.15fr_.85fr]">
+        <div>
+          <p class="eyebrow reveal inline-flex items-center gap-2 rounded-full border border-line bg-surface/70 px-3 py-1.5">
+            <span class="pulse-dot h-2 w-2 rounded-full bg-accent"></span> IT Support &amp; Infrastructure
+          </p>
+          <h1 class="reveal mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+            Hi, I'm <span class="grad-text">Debashis Barmon.</span>
+          </h1>
+          <h2 class="reveal mt-4 text-xl font-semibold text-muted sm:text-2xl">
+            Keeping data centers, networks and teams running reliably.
+          </h2>
+          <p class="reveal mt-5 max-w-xl leading-relaxed text-muted">
+            IT professional at Akij Insaf Group with hands-on experience in data center monitoring,
+            power and cooling systems, physical security and day-to-day technical support — focused on uptime,
+            clear communication and dependable operations.
+          </p>
+          <div class="reveal mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="btn btn-primary">Get in touch <span aria-hidden="true">↗</span></a>
+            <a href="#experience" class="btn btn-ghost">Explore my experience</a>
+          </div>
+
+          <dl class="reveal mt-12 grid max-w-lg grid-cols-3 gap-4">
+            <div class="card p-4">
+              <dt class="font-mono text-xs uppercase tracking-wider text-muted">Experience</dt>
+              <dd class="mt-1 text-2xl font-bold"><span data-count="5">5</span>+ <span class="text-sm font-medium text-muted">years</span></dd>
+            </div>
+            <div class="card p-4">
+              <dt class="font-mono text-xs uppercase tracking-wider text-muted">Based in</dt>
+              <dd class="mt-1 text-2xl font-bold">Dhaka</dd>
+            </div>
+            <div class="card p-4">
+              <dt class="font-mono text-xs uppercase tracking-wider text-muted">Graduated</dt>
+              <dd class="mt-1 text-2xl font-bold">2019</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Portrait + terminal -->
+        <div class="reveal relative mx-auto w-full max-w-sm pb-10 lg:max-w-none lg:pl-6">
+          <div class="glow absolute -inset-10 -z-10"></div>
+          <div class="portrait-ring float mx-auto w-[78%] sm:w-[70%] lg:w-[80%]">
+            <img src="assets/profile.jpg" alt="Portrait of Debashis Barmon" width="522" height="800"
+                 class="aspect-[4/5] w-full rounded-[1.6rem] object-cover object-[50%_15%]" fetchpriority="high">
+          </div>
+
+          <div class="terminal absolute -bottom-2 right-0 w-[88%] rounded-2xl p-4 font-mono text-[12.5px] shadow-2xl shadow-black/30 sm:w-[78%] lg:w-[74%]" role="img" aria-label="System status panel">
+            <div class="mb-3 flex items-center gap-1.5">
+              <span class="h-2.5 w-2.5 rounded-full bg-red-400/80"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-yellow-400/80"></span>
+              <span class="h-2.5 w-2.5 rounded-full bg-emerald-400/80"></span>
+              <span class="ml-2 text-slate-500">system_status.exe</span>
+            </div>
+            <div id="termLines" class="min-h-[5.6rem] space-y-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- keyword strip -->
+      <div class="relative border-y border-line bg-surface/40">
+        <div class="mx-auto flex max-w-page flex-wrap items-center justify-center gap-2 px-5 py-5">
+          <span class="chip">Data Center</span><span class="chip">Building Management System</span>
+          <span class="chip">UPS &amp; Power</span><span class="chip">IP Camera</span>
+          <span class="chip">Synology</span><span class="chip">OpManager</span>
+          <span class="chip">Endpoint Manager</span><span class="chip">ServiceDesk Plus</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mx-auto max-w-page px-5 py-24">
+      <p class="eyebrow reveal">01 / About</p>
+      <div class="mt-4 grid gap-10 lg:grid-cols-2">
+        <h2 class="reveal text-3xl font-bold leading-tight tracking-tight sm:text-4xl">A practical approach to IT operations.</h2>
+        <div class="reveal space-y-4 leading-relaxed text-muted">
+          <p>
+            I'm an IT professional with a B.Sc. in Electronics &amp; Telecommunications Engineering from East West University.
+            Since August 2021 I've been part of the IT team at Akij Insaf Group, supporting users across the group
+            and looking after the infrastructure behind their work.
+          </p>
+          <p>
+            My day-to-day covers monitoring the data center environment, keeping power, cooling and network
+            systems healthy, resolving user requests through service-desk and monitoring tools, and coordinating with
+            vendors. I like checklists, clean documentation and calm, timely handovers — the details that keep systems up.
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="chip">Reliability</span><span class="chip">Troubleshooting</span>
+            <span class="chip">Documentation</span><span class="chip">Team collaboration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="border-y border-line bg-surface/30 py-24">
+      <div class="mx-auto max-w-page px-5">
+        <p class="eyebrow reveal">02 / Experience</p>
+        <h2 class="reveal mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Where I've been working.</h2>
+
+        <article class="card reveal mt-10 p-6 sm:p-9">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-widest text-accent">Aug 2021 — Present</p>
+              <h3 class="mt-2 text-2xl font-bold">Assistant Officer (IT)</h3>
+              <p class="mt-1 font-medium">Akij Insaf Group</p>
+              <p class="mt-1 text-sm text-muted">Akij House (Corporate Head Office), Tejgaon, Dhaka</p>
+            </div>
+            <span class="chip self-start">Full-time · Active member of the BMS team</span>
+          </div>
+
+          <p class="mt-6 max-w-3xl leading-relaxed text-muted">
+            Responsible for the efficient operation, maintenance and monitoring of data center facilities and IT
+            infrastructure, and for continuous observation of the server room environment — supporting uptime,
+            security and efficiency through vigilance and routine checks.
+          </p>
+
+          <ol class="num-list mt-8 grid gap-x-10 gap-y-5 text-[15px] leading-relaxed md:grid-cols-2">
+            <li><b>Monitoring &amp; operations.</b> <span class="text-muted">Continuously monitor temperature, humidity, power, cooling and fire suppression through dashboards, and confirm DCIM/EMS, UPS and cooling units are functioning properly.</span></li>
+            <li><b>Power systems.</b> <span class="text-muted">Check UPS load, battery health and runtime, and verify power distribution units (PDUs) are working correctly.</span></li>
+            <li><b>Security &amp; compliance.</b> <span class="text-muted">Enforce physical security protocols including access control and visitor logging; monitor cameras and access systems; assist in environmental and operational audits.</span></li>
+            <li><b>Network &amp; connectivity.</b> <span class="text-muted">Check key network links for outages or degradation and verify internal and external connectivity.</span></li>
+            <li><b>Alerts &amp; vendors.</b> <span class="text-muted">Review, acknowledge and investigate monitoring alerts; coordinate with third-party vendors on procurement, maintenance and support; work with internal teams on infrastructure improvements.</span></li>
+            <li><b>Documentation &amp; handover.</b> <span class="text-muted">Log incidents, complete and sign off checklists, report issues to the right teams, keep the shift log updated and brief incoming staff on pending tasks.</span></li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="mx-auto max-w-page px-5 py-24">
+      <p class="eyebrow reveal">03 / Expertise</p>
+      <h2 class="reveal mt-4 text-3xl font-bold tracking-tight sm:text-4xl">What I bring to the team.</h2>
+
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="card reveal p-6">
+          <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-accent/10 font-mono text-lg text-accent">⌘</div>
+          <h3 class="text-lg font-semibold">Data Center Operations</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Environmental monitoring, routine checks, housekeeping and shift handover for server room facilities.</p>
+        </div>
+        <div class="card reveal p-6">
+          <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-accent/10 font-mono text-lg text-accent">⚡</div>
+          <h3 class="text-lg font-semibold">Power &amp; Cooling</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Online UPS (Schneider Electric), PDUs, and cooling units — monitored for load, battery health and runtime.</p>
+        </div>
+        <div class="card reveal p-6">
+          <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-accent/10 font-mono text-lg text-accent">⇄</div>
+          <h3 class="text-lg font-semibold">Network Monitoring</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Link status, connectivity checks and alert review using Applications Manager and OpManager.</p>
+        </div>
+        <div class="card reveal p-6">
+          <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-accent/10 font-mono text-lg text-accent">☰</div>
+          <h3 class="text-lg font-semibold">IT Support &amp; Service Desk</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Technical support and request resolution via ManageEngine ServiceDesk Plus, SharePoint and Microsoft Endpoint Configuration Manager.</p>
+        </div>
+        <div class="card reveal p-6">
+          <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-accent/10 font-mono text-lg text-accent">◉</div>
+          <h3 class="text-lg font-semibold">Physical Security</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Access control, IP camera monitoring, locked racks and visitor logging aligned with data center policy.</p>
+        </div>
+        <div class="card reveal p-6">
+          <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-accent/10 font-mono text-lg text-accent">⚙</div>
+          <h3 class="text-lg font-semibold">Systems &amp; Vendors</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">Synology file server, print server, hardware/software setup, Unifi Hotspot Manager and daily vendor coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="border-y border-line bg-surface/30 py-24">
+      <div class="mx-auto max-w-page px-5">
+        <p class="eyebrow reveal">04 / Education</p>
+        <h2 class="reveal mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Academic background.</h2>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="card reveal p-6">
+            <div class="flex items-center justify-between">
+              <span class="chip text-accent">BSc</span><span class="font-mono text-sm text-muted">2019</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">B.Sc. in Engineering</h3>
+            <p class="mt-1 text-sm text-muted">Electronics &amp; Communications Engineering — Electronics &amp; Telecommunications Engineering</p>
+            <p class="mt-3 text-sm font-medium">East West University</p>
+          </div>
+          <div class="card reveal p-6">
+            <div class="flex items-center justify-between">
+              <span class="chip text-accent">HSC</span><span class="font-mono text-sm text-muted">2012</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Higher Secondary Certificate</h3>
+            <p class="mt-1 text-sm text-muted">Science group — Dinajpur Board</p>
+            <p class="mt-3 text-sm font-medium">Lalmonirhat Govt. College</p>
+          </div>
+          <div class="card reveal p-6">
+            <div class="flex items-center justify-between">
+              <span class="chip text-accent">SSC</span><span class="font-mono text-sm text-muted">2010</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Secondary School Certificate</h3>
+            <p class="mt-1 text-sm text-muted">Science group — Dinajpur Board</p>
+            <p class="mt-3 text-sm font-medium">Lalmonirhat Govt. High School</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEYOND WORK -->
+    <section id="beyond" class="mx-auto max-w-page px-5 py-24">
+      <p class="eyebrow reveal">05 / Beyond Work</p>
+      <h2 class="reveal mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Community &amp; activities.</h2>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2">
+        <div class="card reveal flex gap-5 p-6"><span class="font-mono text-2xl text-accent">01</span><div><h3 class="font-semibold">Telecommunications Club</h3><p class="mt-1 text-sm text-muted">Member, East West University Telecommunications Club.</p></div></div>
+        <div class="card reveal flex gap-5 p-6"><span class="font-mono text-2xl text-accent">02</span><div><h3 class="font-semibold">ECE Sports Club</h3><p class="mt-1 text-sm text-muted">Player, Electronics &amp; Communications Engineering Sports Club.</p></div></div>
+        <div class="card reveal flex gap-5 p-6"><span class="font-mono text-2xl text-accent">03</span><div><h3 class="font-semibold">Rotaract Club of EWU</h3><p class="mt-1 text-sm text-muted">Member of the blood donation club at East West University.</p></div></div>
+        <div class="card reveal flex gap-5 p-6"><span class="font-mono text-2xl text-accent">04</span><div><h3 class="font-semibold">East West Bidyaniketan</h3><p class="mt-1 text-sm text-muted">Member, a primary school for uprooted children.</p></div></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="relative overflow-hidden border-t border-line bg-surface/30 py-24">
+      <div class="glow pointer-events-none absolute -bottom-32 left-1/2 h-[26rem] w-[26rem] -translate-x-1/2 opacity-70"></div>
+      <div class="relative mx-auto max-w-page px-5">
+        <p class="eyebrow reveal">06 / Contact</p>
+        <h2 class="reveal mt-4 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">Let's talk about your next IT role or project.</h2>
+        <p class="reveal mt-4 max-w-xl text-muted">Open to conversations about IT support, data center and infrastructure opportunities.</p>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <a href="mailto:deba.barmon@gmail.com" class="card reveal block p-6">
+            <p class="font-mono text-xs uppercase tracking-widest text-muted">Email</p>
+            <p class="mt-2 break-all font-semibold">deba.barmon@gmail.com</p>
+            <p class="mt-3 text-sm text-accent">Send an email ↗</p>
+          </a>
+          <a href="tel:+8801623782729" class="card reveal block p-6">
+            <p class="font-mono text-xs uppercase tracking-widest text-muted">Phone</p>
+            <p class="mt-2 font-semibold">+880 1623 782729</p>
+            <p class="mt-3 text-sm text-accent">Call now ↗</p>
+          </a>
+          <div class="card reveal p-6">
+            <p class="font-mono text-xs uppercase tracking-widest text-muted">Location</p>
+            <p class="mt-2 font-semibold">Dhaka, Bangladesh</p>
+            <p class="mt-3 text-sm text-muted">Available for on-site roles in Dhaka.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="mx-auto flex max-w-page flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-muted sm:flex-row">
+      <a href="#home" class="font-mono text-lg font-bold text-ink">DB<span class="text-accent">.</span></a>
+      <p>© <span id="year">2026</span> Debashis Barmon. All rights reserved.</p>
+      <a href="#home" class="hover:text-accent">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
